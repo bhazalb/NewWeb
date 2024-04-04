@@ -1,55 +1,218 @@
-/*.dropbtn{
-    background-color: rgba(105, 105, 105, 0.514);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+body{
+    margin: 0;
+    padding: 0;
 }
-.dropbtn:hover, 
-.dropbtn:focus {
-    background-color: #2f3133;
-  }
-
-  .dropdown{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-  }
-  #myDropdown{
-    display: none;
-    position: absolute;
-    background-color: #2f3133;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  #myDropdown a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
-  .dropdown a:hover {background-color: #ddd;}
-  .show {display: block;}*/
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.container{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 0;
+    padding-top: 0;
+    background-color: black;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: end;
 
-.wallpaper{
-    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(photo/photo2.jpg);
+}
+.menu{
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.menu a{
+    position: relative;
+  /*  color: #18272F;*/
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+    color:rgb(194, 192, 192);
+    font-size: 20px;
+}
+a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(194, 192, 192);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+a:hover::before{
+transform-origin: left;
+transform: scaleX(1);
+}
+.scroll-bar{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-image:  url(photo/white.jpg);
     min-height: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.inner{
-    color: white;
-    text-align:justify;
-    padding-top:55px;
-    font-size: 1.50em;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.6em;
+.scroll-bar h1{
+    font-size: 35px;
+    margin-top: 0;
+    padding-top: 15%;
+    padding-left: 15%;
+}
+.scroll-bar p{
+  padding-left: 15%;
+}
+.aboute{
+  background-color: black;
+  color:rgb(185, 180, 180);
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  min-height: 400px;
+  padding-bottom: 80px;
+}
+.aboute h2{
+  margin-top: 0;
+  padding-top: 10%;
+  padding-left: 15%;
+} 
+.series{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+.series .cards1 , .cards2, .cards3{
+  overflow: hidden;
+  cursor: pointer;
+  padding: 25px;
+  margin: 15px;
+  background-color: rgba(235, 232, 232, 0.726);
+}
+.series .cards1 > * , .cards2 > *, .cards3 > * {
+  transition: .4s;
+}
+.series .figcaption{
+   display: grid;
+   align-items: end;
+   font-family: "Libre Baskerville", serif;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 2.3rem;
+   color: #0000;
+}
+.series .cards1:hover img , 
+.cards2:hover img,
+ .cards3:hover img{
+  transform: scale(1.2);
+ }
+
+.series .cards1 img{
+  margin-top: 6px;
+  width: 110px;
+  margin-left: 15px;
+}
+.series .cards2 img{
+  width: 80px;
+  margin-left: 15px;
+}
+.series .cards3 img{
+  margin-left: 20px;
+  margin-top: 8px;
+  width: 80px
+}
+.scroll-bar{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.scroll-bar h3{
+  font-size: 21px;
+  margin-top: 0;
+  padding-top: 10%;
+  padding-left: 15%;
+}
+.scroll-bar .box{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+
+}
+.box .first-slice{
+  width: 30%;
+}
+.box .first-slice:hover{
+  background-color: rgba(194, 192, 192, 0.459);
+}
+.box .first-slice h5{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 17px;
+    font: bold;
+    padding-left: 25px;
+}
+.box .first-slice p{
+  font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.box .visit{
+  background-color: black;
+  border: none;
+  width: 85px;
+  height: 55px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.box .visit:hover{
+  cursor: pointer;
+}
+.box .visit a{
+  text-decoration: none;
+    color:rgb(194, 192, 192);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.box .second-slice:hover{ background-color: rgba(194, 192, 192, 0.459);}
+.box .second-slice{
+  width: 30%;
+}
+.box .second-slice h5{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 17px;
+    font: bold;
+    padding-left: 25px;
+}
+.box .second-slice p{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }

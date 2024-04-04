@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+    .series .cards1 ,
+     .cards2, .cards3{
+      width: 25%;
+    }
+    .series .cards1 img{
+      margin-top: 6px;
+      width: 110px;
+      margin-left: 15px;
+    }
+    .series .cards2 img{
+      width: 80px;
+      margin-left: 15px;
+    }
+    .series .cards3 img{
+      margin-left: 20px;
+      margin-top: 8px;
+      width: 80px
+    }
+    .scroll-bar .box{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 5%;
+    }
+    .box .first-slice {
+      width: 55%;
+      
+    }
+    .box .second-slice{
+      width: 50%;
+    }
+    
+  }
