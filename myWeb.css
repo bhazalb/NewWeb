@@ -240,6 +240,9 @@ transform: scaleX(1);
 #social .info a{
   margin: 10px;
  }
+ #social .info a:hover{
+  color: white;
+ }
  #social .info i{
   min-width: 50px;
  }
